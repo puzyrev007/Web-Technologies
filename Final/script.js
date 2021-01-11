@@ -137,7 +137,8 @@ function magic() {
 	colorHex =  colorRGB.toString(16);
 	colorText = "#" + colorHex;
 	cellRandId.style.color = colorText;
-
+	
+	textHeight = randomInteger(15, 25);
 	cellRandId.style.fontSize = textHeight + "pt";
 }
 
