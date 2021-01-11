@@ -1,0 +1,10 @@
+body{
+    background-color: floralwhite;
+    color:dimgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+}
