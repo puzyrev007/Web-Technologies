@@ -43,7 +43,6 @@ function saveTextArea(){
 		
 	string = $parentCell.children[0].value;
 	$parentCell.children[0].remove();
-	$parentCell.children[0].remove();
 	data = document.createElement("span");
 	data.innerHTML = string;
 	$parentCell.prepend(data);
