@@ -1,0 +1,62 @@
+body {
+    width: 720px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.content {
+    background-image: linear-gradient(to bottom right, #1f2535, #3c4f6d);
+    color: #fff;
+    padding: 20px;
+}
+
+.writer-img {
+    width: 40px;
+    float: left;
+    margin: 0px 10px;
+}
+
+.byline {
+    margin: 0px 10px;
+    text-transform: uppercase;
+    color: #8990a0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+h2 {
+    width: 480px;
+    color: #8990a0;
+    font-weight: 500;
+    border-bottom: 1px solid #929199;
+    padding-bottom: 20px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.image {
+    background: url('images/soccer.jpeg') no-repeat;
+    background-size: cover;
+    height: 25vh;
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    opacity: 0.5;
+    padding: 10px;
+    font: bold italic 15px/1.5 "Roboto", sans-serif;
+
+}
