@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    background: url('images/bg.jpg') no-repeat center / cover;
+    height: 100vh;
+}
+
+.header .container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+}
+
+.header p {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header a {
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 140px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+}
+
+.nav {
+    background: black;
+    color: white;
+    margin-top: -16px;
+    padding-left: 15%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 15px;
+    margin-left: -4px;
+    transition: .1s;
+}
+
+ul li:hover {
+    background: blue;
+    cursor: pointer;
+}
+
+.main {
+    height: 300px;
+    padding-left: 15%;
+    margin-top: -20px;
+    padding-right: 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main img {
+    margin-right: 50px;
+    height: 200px;
+    float: left;
+}
+
+.jumbotron {
+    background: url('images/jumbotron_bg.jpg') no-repeat center / cover;
+    height: 60vh;
+    color: white;
+    text-align: right;
+    padding-right: 20%;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20%;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    background: blue;
+    position: relative;
+    top: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: blue;
+}
+
+.footer {
+    background: black;
+    height: 8vh;
+    margin-top: -16px;
+    color: white;
+    position: relative;
+}
+
+.footer p {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 20%;
+}
+
+.main {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav {
+    padding-left: 0;
+}
+
+.jumbotron .container {
+    right: 10%;
+}
+
+.footer p {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+
+}
