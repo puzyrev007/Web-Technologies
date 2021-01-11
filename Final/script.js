@@ -94,7 +94,7 @@ function deleteRow() {
 }
 
 function randomInteger(min, max) {
-	let rand = min  + Math.random() * (max - min + 1);
+	let rand = min -0.5 + Math.random() * (max - min + 1);
 	return Math.round(rand);
 }
 
@@ -102,10 +102,8 @@ function magic() {
     var body = document.querySelector("body"),
         table = document.querySelector("table"),
 		rand,
-		color = "",
-		colorRed,
-		colorGreen,
-		colorBlue,
+		colorRGB,
+		colorHex,
 		textHeight,
 		randRow,
 		randCol,
@@ -117,7 +115,7 @@ function magic() {
 	cellRandId = rowRandId.children[randCol];
 	
 	rand = randomInteger(1, 4);
-	if (rand == 1 && cellRandId.children[0].tagName!="TEXTAREA"){
+	if (rand == 2 && cellRandId.children[0].tagName!="TEXTAREA"){
 		cellRandId.children[0].remove();
 		input = document.createElement("textarea");
 		but = document.createElement("input");
@@ -129,17 +127,17 @@ function magic() {
 		return;
 	} 
 	
-	colorRed = randomInteger(1, 255);
-	colorGreen = randomInteger(1, 255);
-	colorBlue = randomInteger(1, 255);
-	textHeight = randomInteger(15, 25);
-	colorBacbground = "rgb(" + colorRed + ", " + colorGreen + ", " + colorBlue + ")";
+	
+	colorRGB = randomInteger(0x000000, 0xffffff);
+	colorHex =  colorRGB.toString(16);
+	colorBacbground = "#" + colorHex;
 	cellRandId.style.backgroundColor = colorBacbground;
-	colorRed = randomInteger(1, 255);
-	colorGreen = randomInteger(1, 255);
-	colorBlue = randomInteger(1, 255);
-	colorText = "rgb(" + colorRed + ", " + colorGreen + ", " + colorBlue + ")";
+
+	colorRGB = randomInteger(0x000000, 0xffffff);
+	colorHex =  colorRGB.toString(16);
+	colorText = "#" + colorHex;
 	cellRandId.style.color = colorText;
+
 	cellRandId.style.fontSize = textHeight + "pt";
 }
 
